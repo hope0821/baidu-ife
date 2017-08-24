@@ -1,0 +1,237 @@
+/* 通用css */
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.float_l {
+    float: left;
+}
+
+.float_r {
+    float: right;
+}
+
+
+
+
+/*
+ * 利用幽灵伪元素辅助垂直居中
+ * .ghost伪元素加到需要垂直居中子元素的父元素上
+ * 同时设置父元素position:relative
+ * 同时设置子元素vertical-align:middle，display:inline-block
+*/
+
+.ghost:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 30px;
+    vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+/* header部分 */
+
+header {
+    background-color: #333333;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+}
+
+header h1 {
+    margin: 0 0 0 10px;
+    display: inline-block;
+    vertical-align: middle;
+    text-indent: -999em;
+    background: url(http://via.placeholder.com/100x40);
+    width: 100px;
+    height: 40px;
+}
+
+header ul {
+    margin: 0px;
+}
+
+header li {
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    margin: 0 10px;
+}
+
+header a {
+    color: #fff;
+    font-size: 12px;
+}
+
+header a:hover {
+    color: #9C9C9C;
+}
+
+
+
+
+
+
+
+
+/* body部分 */
+
+#container {
+    background-color: #DEDEDE;
+    padding-bottom: 1px;
+}
+
+main {
+    width: 97%;
+    margin: 20px auto;
+    padding-top: 60px;
+}
+
+main article {
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 1px #9F9F9F;
+}
+
+main article h3 {
+    color: #8E8B8D;
+}
+
+main article p {
+    text-indent: 2em;
+}
+
+main article ul {
+    list-style: none;
+}
+
+.pic {
+    border: 1px solid #ddd;
+    max-width: min-content;
+    text-align: center;
+    padding: 10px;
+}
+
+.pic figcaption {
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.order li {
+    font-weight: 600;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 5px;
+    text-align: left;
+    font-size: 14px;
+}
+
+table th {
+    background-color: #000;
+    color: #fff;
+}
+
+table tr:last-child {
+    background-color: #ccc;
+}
+
+
+
+
+
+/* aside部分 */
+
+aside {
+    width: 96%;
+    margin: 40px 0 20px 20px;
+    box-shadow: 3px 3px 1px #999;
+}
+
+aside article {
+    background-color: #fff;
+    padding: 20px;
+}
+
+aside h2 {
+    border-left: 3px solid #ccc;
+    margin: 0;
+    padding: 8px;
+}
+
+aside form {
+    margin-top: 20px;
+}
+
+aside h6 {
+    margin: 0;
+    color: #ccc;
+    font-weight: 500;
+    margin-left: 372px;
+    margin-top: 5px;
+}
+
+aside div {
+    margin-bottom: 10px;
+}
+
+/* */
+.tag {
+    text-align: right;
+    padding-right: 20px;
+    width: 30%;
+    float: left;
+}
+
+aside button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #3355D0;
+    color: #fff;
+}
+
+
+/* footer部分 */
+
+footer {
+    background-color: #000;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+}
+
+footer h5 {
+    margin: 0;
+    color: #fff;
+    padding-top: 20px;
+}
