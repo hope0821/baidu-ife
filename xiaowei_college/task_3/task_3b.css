@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#container {
+    margin: 20px;
+    padding: 20px;
+    background-color: #eee;
+    border: 1px solid #999;
+}
+
+#container img {
+    border: 1px solid #000;
+    /* 解决图片下面多出来的4px */
+    vertical-align: middle;
+}
+
+.left,
+.main,
+.right {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #999;
+}
+
+.left {
+    width: 200px;
+    float: left;
+    position: relative;
+    margin-right: 20px;
+}
+
+.left figcaption {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.main {
+    overflow: hidden;
+}
+
+.main section {
+    margin-bottom: 20px;
+}
+
+.main p {
+    margin-top: 10px;
+}
+
+.main h3 {
+    margin: 10px 0;
+}
+
+.right {
+    width: 120px;
+    float: right;
+    margin-left: 20px;
+}
+
+.right img {
+    margin-bottom: 20px;
+}
+
+.right img:last-child {
+    margin-bottom: 0;
+}

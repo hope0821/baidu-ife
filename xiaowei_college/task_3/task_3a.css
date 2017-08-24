@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    margin: 20px;
+    padding: 20px;
+    background-color: #eee;
+    border: 1px solid #999;
+    display: flex;
+    /* align-items的默认值是stretch，
+       即将3列的高度都拉伸到一样长，
+       将值改为flex-start后按照顶部对齐显示正常高度
+     */
+    align-items: flex-start;
+}
+
+#container img {
+    border: 1px solid #000;
+    /* 解决图片下面多出来的4px */
+    vertical-align: middle;
+}
+
+.left,
+.main,
+.right {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #999;
+}
+
+.left {
+    width: 200px;
+    position: relative;
+}
+
+.left figcaption {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.main {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.main section {
+    margin-bottom: 20px;
+}
+
+.main p {
+    margin-top: 10px;
+}
+
+.main h3 {
+    margin: 10px 0;
+}
+
+.right {
+    width: 120px;
+}
+
+.right img {
+    margin-bottom: 20px;
+}
+.right img:last-child {
+    margin-bottom: 0;
+}

@@ -33,12 +33,12 @@ figure {
 
 ```css
 .clearfix:after {
-	content: "";
-	display: table;
+  content: "";
+  display: table;
 }
 
 .clearfix:after {
-	clear: both;
+  clear: both;
 }
 ```
 [清除浮动demo](https://codepen.io/hope0821/pen/YxvMBw?editors=1100#0)
