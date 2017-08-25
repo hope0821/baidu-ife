@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 利用绝对定位+transform实现水平垂直居中 */
+.container {
+    height: 220px;
+    width: 400px;
+    background-color: #ccc;
+    position: absolute;
+    overflow: hidden;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.left_sector,
+.right_sector {
+    width: 100px;
+    height: 100px;
+    background-color: #fc0;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.left_sector {
+    top: -50px;
+    left: -50px;
+}
+
+.right_sector {
+    right: -50px;
+    bottom: -50px;
+}

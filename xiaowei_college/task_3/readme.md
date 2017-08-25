@@ -38,3 +38,4 @@ img {
 	- 利用负margin将`left`(等于main的width)和`right`(等于自身的width)拉上来，这时候`left`和`right`重叠在`main`上
 	- 父容器设置左右`padding`值分别等于`left`和`right`的`width`,使整体往中间压缩
 	- 利用相对定位(`position: relative`)，将`left`(left=负的自身宽度)和`right`(right=负的自身宽度)拉出来
+	- 对父容器进行浮动清除
