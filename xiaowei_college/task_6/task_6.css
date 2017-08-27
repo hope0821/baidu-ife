@@ -436,6 +436,7 @@ header {
 .quote span {
     font: 72px SimHei;
     color: #D45C5B;
+    /* 设置引号的高度 */
     height: 20px;
 }
 

@@ -8,6 +8,7 @@
 2. 让`height`和`line-height`同时等于一个固定值
 	- 使用场景：使`header`部分的导航链接垂直居中
 	- 实现方式：导航链接下面的`<li>`的`height`和`line-height`同时等于`header`的高度，注意去掉`<li>`的上下`margin`
+	- 或者可以设置`<li>`的`height`和`line-height`同时等于某一固定高度，再通过上下`padding`把高度撑起来
 
 ### Q2: 如何让容器自适应里面图片的大小
 给外围的`<figure>`添加`max-width`属性并设置值为`min-content`，可以实现容器自适应内部图片大小
