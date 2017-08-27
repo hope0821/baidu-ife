@@ -1,0 +1,466 @@
+/* 通用部分 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+    background-color: #666;
+    /* 雅黑 黑体 宋体 楷体 */
+    font-family: "Microsoft YaHei", SimHei, SimSun, KaiTi;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+
+
+/* 正式部分 */
+
+.container {
+    width: 980px;
+    height: 1386px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+
+
+
+
+/* header 部分*/
+
+header {
+    width: 892px;
+    margin: 0 auto;
+    border-bottom: 2px solid #938e8c;
+    position: relative;
+    margin-bottom: 34px;
+}
+
+.logo {
+    background-color: #D45C5B;
+    width: 110px;
+    height: 61px;
+    float: left;
+    position: relative;
+}
+
+.logo span {
+    position: absolute;
+    left: 6px;
+    bottom: 2px;
+    font: 1.2rem SimHei;
+    color: #fff;
+}
+
+.date {
+    float: right;
+    position: absolute;
+    bottom: 2px;
+    right: 0px;
+    color: #d45d5c;
+    font: 1.2rem SimHei;
+}
+
+
+
+
+
+/* main部分开始 */
+
+.main {
+    width: 892px;
+    margin: 0 auto;
+}
+
+
+
+/* 第一个section */
+
+.banner {
+    position: relative;
+    width: 641px;
+    display: inline-block;
+    /*margin-right: 48px;*/
+}
+
+.g_mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.r_mask {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.about {
+    margin-left: 44px;
+    width: 203px;
+    display: inline-block;
+    vertical-align: top;
+    border-top: 2px solid #cc8091;
+}
+
+.about h2 {
+    color: #000;
+    font-size: 2.4rem;
+    /* 添加下划线 */
+    text-decoration: underline;
+    /* 让About变成ABOUT，但是第一个字母比后面的大 */
+    font-variant: small-caps;
+    font-weight: 500;
+}
+
+.about h2:first-child {
+    padding: 6px 0 1px;
+}
+
+.about p {
+    font: 1.2rem KaiTi;
+    color: #676767;
+}
+
+.about h3 {
+    color: #75b86b;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 116px;
+    position: relative;
+    right: 20px;
+    top: 4px;
+}
+
+.about-last {
+    position: relative;
+    top: -10px;
+}
+
+.about-last h4 {
+    color: #cc8091;
+    font-size: 55px;
+    font-weight: 500;
+}
+
+.about-last h4,
+.about-css {
+    display: inline-block;
+}
+
+.about-css h5 {
+    color: #cc8091;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.about-css h6 {
+    font-size: 12px;
+    color: #ccc;
+    font-weight: 500;
+}
+
+
+
+/* 第二个section */
+
+.three-w {
+    margin: 20px 0 60px;
+}
+
+.three-w div {
+    float: left;
+    width: 206px;
+    margin-right: 30px;
+}
+
+.three-w div:first-child {
+    width: 230px;
+}
+
+.three-w h3 {
+    font-size: 1.6rem;
+    text-decoration: underline;
+    margin-bottom: 11px;
+    color: #418c59;
+}
+
+.when h3 {
+    color: #d2994f;
+}
+
+.how h3 {
+    color: #cc7680;
+}
+
+.three-w p {
+    font: 1.2rem SimSun;
+    line-height: 16px;
+    color: #767777;
+    opacity: 0.7;
+}
+
+.how p {
+    line-height: 1.8rem;
+}
+
+.percentage {
+    position: relative;
+    bottom: -20px;
+}
+
+.percentage p {
+    color: #231815;
+    font-family: "Microsoft YaHei";
+}
+
+.percentage span {
+    color: #cd4a48;
+    font-style: italic;
+    font-family: "Microsoft YaHei";
+}
+
+
+
+/* 第三个section */
+
+
+/* 左边部分 */
+
+.left-content {
+    width: 415px;
+    float: left;
+}
+
+.title {
+    border-bottom: 2px solid #11456b;
+    margin-bottom: 20px;
+}
+
+.title span {
+    font-size: 72px;
+    color: #f5e327;
+    font-style: italic;
+}
+
+.title h2 {
+    font: 42px SimHei;
+    color: #11456b;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.title h2:last-child {
+    font-size: 33px;
+    line-height: 50px;
+    padding-bottom: 10px;
+}
+
+.article p {
+    font: 12px SimSun;
+    color: #767777;
+    line-height: 16px;
+}
+
+.first-p:before {
+    content: "前";
+    float: left;
+    font: 70px "Microsoft YaHei";
+    color: #f5e327;
+    position: relative;
+    top: 2px;
+    margin-right: 6px;
+    line-height: 65px;
+}
+
+.article img {
+    float: right;
+    padding: 20px 0 12px 20px;
+    position: relative;
+    right: 6px;
+    bottom: 4px;
+}
+
+.third-p,
+.third-p+p {
+    text-indent: 2rem;
+}
+
+
+/* 右边部分 */
+
+.right-content {
+    float: right;
+}
+
+.right-top {
+    position: relative;
+    font-size: 0;
+}
+
+.b-mask {
+    width: 458px;
+    height: 61px;
+    background-color: #000;
+    opacity: 0.4;
+    position: absolute;
+    bottom: 0px;
+}
+
+.right-top h2 {
+    color: #fff;
+    font: 26px "Microsoft YaHei";
+    /* height和line-height相等即可使文字垂直居中*/
+    height: 44px;
+    line-height: 44px;
+    border-left: 3px solid #72b16a;
+    position: absolute;
+    bottom: 8.5px;
+    margin-left: 40px;
+    padding-left: 10px;
+}
+
+.right-top span {
+    padding-left: 10px;
+    font: 12px "Microsoft YaHei";
+    color: #72b16a;
+    font-style: italic;
+}
+
+.right-bottom {
+    width: 459px;
+    height: 318px;
+    background-color: #EDEDD6;
+    margin-top: 20px;
+    padding: 20px 0 0 40px;
+}
+
+.right-bottom li {
+    font: 16px SimSun;
+    color: #5a5b5b;
+    padding-bottom: 20px;
+}
+
+.right-bottom li:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 9px solid #13476a;
+    position: relative;
+    bottom: 10px;
+    right: 6px;
+}
+
+.right-bottom li span {
+    font-size: 12px;
+    text-align: right;
+    font-style: italic;
+}
+
+.hello-wrap {
+    position: absolute;
+}
+
+.helloworld {
+    width: 260px;
+    /*height: 160px;*/
+    background-color: #D45C5B;
+    float: left;
+    position: relative;
+    left: -40px;
+    bottom: -24px;
+    padding: 37px 4px;
+}
+
+.helloworld div {
+    color: #fff;
+}
+
+.number {
+    font: 110px "Microsoft YaHei";
+    float: left;
+    line-height: 86px;
+    height: 86px;
+    border-right: 2px solid #fff;
+    margin-left: 6px;
+}
+
+
+.count {
+    display: inline-block;
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 10px;
+}
+
+.count div {
+    font: 21px SimHei;
+    font-style: italic;
+}
+
+.count .small-hello {
+    font: 12px SimHei;
+}
+
+.quote {
+    float: right;
+    font: 14px SimHei;
+    font-style: italic;
+    color: #5a5b5b;
+    width: 180px;
+    display: inline-block;
+    position: relative;
+    bottom: -40px;
+    right: 24px;
+}
+
+.quote span {
+    font: 72px SimHei;
+    color: #D45C5B;
+    height: 20px;
+}
+
+.quote span:first-child {
+    float: left;
+    margin: -18px 10px 0 -40px;
+}
+
+.quote span:last-child {
+    float: right;
+    position: relative;
+    left: 20px;
+}
+
+
+/* footer部分 */
+footer {
+    width: 892px;
+    border-top: 1px solid #938e8c;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+footer span {
+    float: right;
+    color: #d45d5c;
+    font: 12px SimHei;
+}
