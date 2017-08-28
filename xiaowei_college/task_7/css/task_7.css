@@ -1,0 +1,979 @@
+/* ==========
+    初始默认值
+   ========== */
+
+html {
+    font-size: 625%;
+    color: #A0A0A0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-size: 0.12rem;
+    font-family: "Microsoft YaHei", SimHei, SimSun, KaiTi;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: #888;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================
+    自定义页面样式
+   ================ */
+
+
+/* header部分 */
+
+header {
+    width: 100%;
+    height: 58px;
+    margin-bottom: 2px;
+}
+
+.top {
+    line-height: 58px;
+    padding: 0 0.48rem;
+}
+
+.top span {
+    font-size: 0.22rem;
+    font-family: SimSun;
+    color: #666;
+    float: left;
+    font-weight: 700;
+}
+
+.top span:before {
+    content: "";
+    display: inline-block;
+    background: url('../img/sprites.png') no-repeat;
+    background-position: -43px -184px;
+    width: 31px;
+    height: 31px;
+    position: relative;
+    top: 8px;
+    margin-right: 6px;
+}
+
+.top ul {
+    text-align: right;
+}
+
+.top li {
+    display: inline-block;
+    font-size: 0.14rem;
+    margin-left: 0.3rem;
+}
+
+.top li:last-child {
+    margin-left: 0.2rem;
+}
+
+.top a {
+    padding: 18px 0;
+    font-weight: 600;
+}
+
+.top a.home-page,
+.top a.login {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.top a.login {
+    color: #E54E4B;
+}
+
+.top a.login:before {
+    content: "";
+    display: inline-block;
+    background: url('../img/sprites.png') no-repeat;
+    background-position: -26px -248px;
+    width: 14px;
+    height: 17px;
+    position: relative;
+    top: 4px;
+    right: 4px;
+}
+
+.top a:hover {
+    color: #E54E4B;
+    border-bottom: 3.5px solid #E54E4B;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body部分 */
+
+.main {
+    width: 100%;
+}
+
+
+
+
+
+/* banner */
+
+.banner {
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.slogan {
+    color: #fff;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
+
+.slogan h1 {
+    font: 0.58rem "Microsoft YaHei";
+    margin-bottom: 0.16rem;
+}
+
+.slogan h2 {
+    font: 0.2rem SimHei;
+    color: #ddd;
+    margin: 0 0 0.06rem;
+}
+
+.slogan div {
+    background-color: #E7504E;
+    text-align: center;
+    width: 2.6rem;
+    font: 0.32rem SimHei;
+    padding: 0.08rem 0;
+    margin-top: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* category部分 */
+
+.cate-content {
+    width: 25%;
+    float: left;
+    text-align: center;
+    padding: 50px 50px 50px 70px;
+}
+
+.cate-content p {
+    font: 0.14rem SimHei;
+    width: 230px;
+    color: #999;
+    padding: 6px 70px 6px 0;
+    border-right: 2px solid #aaa;
+}
+
+.square+p {
+    border-right: none;
+}
+
+.circle,
+.flag,
+.flower,
+.square {
+    background: url('../img/sprites.png') no-repeat;
+    margin: 0 0 40px 60px;
+}
+
+.circle {
+    background-position: -4px -96px;
+    width: 42px;
+    height: 42px;
+}
+
+.square {
+    background-position: -50px -96px;
+    width: 41px;
+    height: 40px;
+}
+
+.flag {
+    background-position: -50px -140px;
+    width: 35px;
+    height: 40px;
+}
+
+.flower {
+    background-position: -4px -142px;
+    width: 35px;
+    height: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* about-world部分 */
+
+.about-world {
+    width: 100%;
+    height: 3.6rem;
+    background-color: #ECECEC;
+    text-align: center;
+}
+
+
+.book {
+    background: url('../img/sprites.png') no-repeat;
+    background-position: -4px -0px;
+    width: 91px;
+    height: 92px;
+    margin: 0 auto;
+    position: relative;
+    top: 0.8rem;
+}
+
+.book+h2 {
+    font: 0.48rem SimHei;
+    position: relative;
+    top: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* find-world部分 */
+
+.find-world {
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.find-world img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.find-world-mask {
+    height: 334px;
+    width: 100%;
+    background-color: red;
+    opacity: 0.1;
+    position: absolute;
+    top: 0;
+}
+
+.find-world-text {
+    color: #fff;
+    opacity: 0.9;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.find-world-text h2 {
+    font: 0.2rem SimSun;
+}
+
+.find-world-text h2:after {
+    content: "";
+    width: 30px;
+    height: 8px;
+    border-bottom: 2px solid #fff;
+    margin: 0 auto;
+    display: block;
+}
+
+.find-world-text h4 {
+    opacity: 0.6;
+}
+
+.select {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.country,
+.province,
+.city,
+.search {
+    display: inline-block;
+    width: 200px;
+    background-color: #fff;
+    text-align: left;
+    margin: 0 15px;
+    position: relative;
+    height: 28px;
+    line-height: 28px;
+}
+
+.country>div,
+.province>div,
+.city>div,
+.search>div {
+    padding-left: 8px;
+}
+
+
+.search {
+    text-align: center;
+    background-color: #BE4D48;
+    color: #fff;
+    font-size: 0.14rem;
+    letter-spacing: 15px;
+}
+
+.down-arrow {
+    display: inline-block;
+    background: url('../img/sprites.png') no-repeat;
+    background-position: -4px -244px;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    position: relative;
+    right: -142px;
+    bottom: 2px;
+}
+
+.province ul {
+    position: absolute;
+    top: 28px;
+    display: none;
+}
+
+.province li {
+    width: 200px;
+    background-color: #ccc;
+    padding-left: 20px;
+}
+
+.province:hover ul {
+    display: block;
+    outline: 2px solid #BE4D48;
+}
+
+.province:hover {
+    outline: 2px solid #BE4D48;
+}
+
+.province li:hover {
+    color: #fff;
+    background-color: #BE4D48;
+}
+
+.checked {
+    display: inline-block;
+    visibility: hidden;
+    background: url('../img/sprites.png') no-repeat;
+    background-position: -78px -184px;
+    width: 12px;
+    height: 8px;
+    position: relative;
+    right: 10px;
+}
+
+.province li:hover span.checked {
+    visibility: visible;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* gallery部分 */
+
+.gallery {
+    background-color: #f7f7f7;
+    margin: 0 auto;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.gallery>div {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.gallery img {
+    vertical-align: bottom;
+    outline: 1px solid #ddd;
+    padding: 10px 6px;
+    background-color: #fff;
+}
+
+.gallery h3 {
+    margin: 0;
+    position: relative;
+    top: 4px;
+    left: 8px;
+    font: 0.24rem SimHei;
+    color: #444;
+    letter-spacing: 28px;
+}
+
+.gallery h4 {
+    margin: 10px 0 0 0;
+    color: #777;
+    font-size: 0.13rem;
+}
+
+.gallery h5 {
+    margin: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* time部分 */
+
+.time {
+    width: 100%;
+}
+
+.time-img {
+    width: 66.7%;
+    background: url('../img/new-time.jpg') no-repeat;
+    height: 566px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    text-align: center;
+}
+
+.time-more {
+    width: 33.3%;
+    height: 566px;
+    text-align: center;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time-img-info {
+    color: #fff;
+}
+
+.time-img-info h3 {
+    font-size: 0.4rem;
+    margin: 0;
+}
+
+.time-img-info h2 {
+    font: 1.5rem YaHei;
+    margin: 0;
+    line-height: 1;
+}
+
+.time-img-info h4 {
+    font-size: 0.2rem;
+    margin: 5px 0;
+}
+
+.time-img-info h4:last-child {
+    position: relative;
+    left: -12px;
+}
+
+.time-more h2 {
+    color: #222;
+    font: 0.2rem SimHei;
+    margin: 0;
+}
+
+.time-more-num {
+    color: #E74F4C;
+    font-weight: 700;
+}
+
+.time-more p {
+    padding: 20px 61px;
+    text-align: justify;
+    line-height: 2.4;
+    color: #CBCBCB;
+    margin: 0;
+}
+
+.time-more-info {
+    display: inline-block;
+    color: #E74F4C;
+    border: 1px solid #E74F4C;
+    padding: 5px 25px;
+    margin: 24px 0 30px 0;
+}
+
+
+.grey-circle {
+    background: url('../img/sprites.png') no-repeat;
+    display: inline-block;
+    background-position: -78px -196px;
+    width: 11px;
+    height: 12px;
+}
+
+
+.white-circle {
+    background: url('../img/sprites.png') no-repeat;
+    display: inline-block;
+    background-position: -44px -248px;
+    width: 11px;
+    height: 12px;
+}
+
+.grey-circle,
+.white-circle {
+    margin: 0 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* new-age部分 */
+
+.new-age {
+    width: 100%;
+}
+
+.new-age-left,
+.new-age-middle,
+.new-age-right {
+    height: 519px;
+    float: left;
+    width: 33.3%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.new-age-left h3,
+.new-age-middle h3 {
+    font: 0.18rem YaHei;
+    margin: 0 0 6px 0;
+}
+
+.new-age-middle h3 {
+    color: #666;
+}
+
+.new-age-left h4,
+.new-age-middle h4 {
+    font: 0.2rem SimHei;
+    border: 1px solid #fff;
+    padding: 8px 0;
+}
+
+.new-age-middle h4 {
+    color: #E7504E;
+    border: 1px solid #E7504E;
+}
+
+
+.bar-left:after,
+.bar-middle:after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 15px;
+    border-bottom: 1.6px solid #fff;
+    margin: 0 auto;
+}
+
+.bar-middle:after {
+    border-color: #A8A8A8;
+}
+
+
+.new-age-left {
+    background-color: #E7504E;
+    color: #FBF8F9;
+}
+
+.new-age-right {
+    background: url('../img/girl_05.jpg') no-repeat;
+}
+
+.new-age-right:before {
+    content: "";
+    width: 0;
+    height: 0;
+    display: inline-block;
+    border-top: 20px solid transparent;
+    border-left: 30px solid #fff;
+    border-bottom: 20px solid transparent;
+    position: relative;
+    top: 0;
+    left: -200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* volunteer部分 */
+
+.volunteer {
+    width: 100%;
+    padding: 80px 0 120px 0;
+}
+
+.vol-info {
+    text-align: center;
+    width: 410px;
+    margin: 0 auto 60px auto;
+}
+
+.vol-info h2 {
+    color: #333;
+    font: 0.22rem SimHei;
+    margin-bottom: 14px;
+}
+
+.vol-info h2:after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid #E7504E;
+    width: 30px;
+    height: 6px;
+    margin: 0 auto;
+}
+
+.vol-info p {
+    margin-top: 0;
+}
+
+.vol-wrap {
+    padding: 0 120px;
+}
+
+.vol-detail {
+    float: left;
+    width: 290px;
+    margin-right: 60px;
+}
+
+.vol-detail h2 {
+    font: 0.14rem SimSun;
+    font-weight: 700;
+    color: #666;
+}
+
+.vol-detail>div {
+    margin-bottom: 30px;
+}
+
+.vol-detail p {
+    margin-bottom: 0px;
+    display: -webkit-box;
+    /* 超过2行多少显示省略号 */
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.down-arrow2 {
+    text-align: right;
+}
+
+.down-arrow2:before {
+    content: "";
+    background: url('../img/sprites.png') no-repeat;
+    display: inline-block;
+    background-position: -78px -212px;
+    width: 10px;
+    height: 6px;
+    position: relative;
+    right: 5px;
+}
+
+
+.vol-form {
+    float: left;
+    width: 660px;
+}
+
+.vol-form-w {
+    display: inline-block;
+    width: 310px;
+    background-color: #ECECEE;
+    padding: 12px;
+    margin: 6px;
+}
+
+.vol-form-w input {
+    background-color: #ECECEE;
+    outline: none;
+    border: 0;
+}
+
+.vol-form-des {
+    background-color: #ECECEE;
+    padding: 12px;
+    margin: 6px;
+    width: 635px;
+}
+
+.vol-form-des label {
+    vertical-align: top;
+}
+
+.vol-form-des textarea {
+    background-color: #ECECEE;
+    border: 0;
+    outline: none;
+    resize: none;
+    height: 80px;
+}
+
+.vol-form button {
+    width: 635px;
+    background-color: #ECECEE;
+    margin: 6px;
+    padding: 12px;
+    font: 0.14rem SimHei;
+    border: 0;
+}
+
+
+
+
+
+
+
+/* footer部分 */
+
+footer {
+    width: 100%;
+}
+
+.contact-us {
+    background-color: #32353E;
+    height: 380px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-us-wrap {
+    margin: 0 auto;
+    color: #fff;
+}
+
+.contact-us-wrap p {
+    width: 470px;
+}
+
+.contact-us-wrap form {
+    font-size: 0;
+    margin: 30px 0;
+}
+
+.mail-input,
+.submit {
+    outline: none;
+    border: none;
+    padding: 15px 10px;
+    font-size: 0.14rem;
+}
+
+.mail-input {
+    width: 380px;
+}
+
+.submit {
+    background-color: #707078;
+    letter-spacing: 10px;
+    color: #fff;
+    width: 90px;
+}
+
+
+.footer-bottom {
+    padding: 20px;
+    background-color: #2F2F39;
+}
+
+.footer-bottom span {
+    padding-left: 50px;
+}
+
+.footer-bottom a {
+    float: right;
+    color: #fff;
+    padding-right: 20px;
+}
+
+.icon1,
+.icon2,
+.icon3,
+.icon4 {
+    background: url('../img/sprites.png') no-repeat;
+    display: inline-block;
+    margin: 0 12px;
+}
+
+.icon1 {
+    background-position: -36px -219px;
+    width: 24px;
+    height: 25px;
+}
+
+.icon2 {
+    background-position: -4px -186px;
+    width: 29px;
+    height: 25px;
+}
+
+.icon3 {
+    background-position: -4px -215px;
+    width: 28px;
+    height: 25px;
+}
+
+.icon4 {
+    background-position: -64px -219px;
+    width: 24px;
+    height: 25px;
+}
