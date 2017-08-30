@@ -112,3 +112,28 @@ img {
 - outline可能不是矩形
 - outline-offset可以改变outline的位置，可以是负值
 - [demo](https://www.w3schools.com/css/tryit.asp?filename=trycss3_outline-offset)
+
+### Q9: 响应式表格([table](https://www.w3schools.com/css/tryit.asp?filename=trycss_table_responsive))
+```html
+<div class='table'>
+  <table>...</table>
+</div>
+```
+
+```css
+.table {
+  overflow-x: auto;
+}
+```
+
+### Q10: `::selection`伪元素([demo](https://www.w3schools.com/css/tryit.asp?filename=trycss3_selection))
+```css
+/* 选中后高亮 */
+::selection {
+  color: red;
+  background: yellow;
+}
+
+```
+
+### Q11: CSS自动添加序列([demo](https://codepen.io/hope0821/pen/vJQqmX?editors=1100#0))

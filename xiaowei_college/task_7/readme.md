@@ -32,7 +32,7 @@ header {
 }
 
 .top span {
-  float: left; #脱离文档流，<ul>标签上来
+  float: left; #脱离normal flow，<ul>标签上来
 }
 
 .top ul {
