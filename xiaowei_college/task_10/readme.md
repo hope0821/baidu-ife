@@ -11,44 +11,44 @@
 	- flex容器属性
 		- flex-direction
 			- `flex-direction: row | row-reverse | column | column-reverse`
-			- **row(默认值)：**延主轴方向，起点在左端(12345)
-			- **row-reverse：**延主轴方向，起点在右端(54321)
-			- **column：**延交叉轴方向，起点在上端
-			- **column-reverse：**延交叉轴方向，起点在下端
+			- row(默认值)：延主轴方向，起点在左端(12345)
+			- row-reverse：延主轴方向，起点在右端(54321)
+			- column：延交叉轴方向，起点在上端
+			- column-reverse：延交叉轴方向，起点在下端
 		- flex-wrap
 			- `flex-wrap: nowrap | wrap | wrap-reverse`
-			- **nowrap(默认值)：**不换行
-			- **wrap：**在空间不够的情况下可以换行，第一行在上面
-			- **wrap-reverse：**在空间不够的情况下可以换行，第一行在下面
+			- nowrap(默认值)：不换行
+			- wrap：在空间不够的情况下可以换行，第一行在上面
+			- wrap-reverse：在空间不够的情况下可以换行，第一行在下面
 		- `flex-flow`
 			- 是`flex-direction`和`flex-wrap`属性的简写
 			- 默认值是`flex-flow: row nowrap`
 		- justify-content(主轴方向上)
 			- `justify-content: flex-start | flex-end | center | space-between | space-around`
-			- **flex-start(默认值)：**左对齐
-			- **flex-end：**右对齐
-			- **center：**居中对齐
-			- **space-between：**两端对齐，每个项目之间的距离相等
-			- **space-around：**每个项目之间的距离相等，所以项目与项目之间的距离比项目与边框之间的距离大一倍
-			- **space-evenly：**任何两个项目以及项目与边框的距离均相等
+			- flex-start(默认值)：左对齐
+			- flex-end：右对齐
+			- center：居中对齐
+			- space-between：两端对齐，每个项目之间的距离相等
+			- space-around：每个项目之间的距离相等，所以项目与项目之间的距离比项目与边框之间的距离大一倍
+			- space-evenly：任何两个项目以及项目与边框的距离均相等
 			![](https://cdn.css-tricks.com/wp-content/uploads/2013/04/justify-content-2.svg)
-		- align-items(交叉轴方向上)
+		- align-items(交叉轴方向上,针对flex items)
 			- `align-items: flex-start | flex-end | center | baseline | stretch`
-			- **flex-start：**交叉轴起点对齐
-			- **flex-end：**交叉轴终点对齐
-			- **center：**交叉轴居中对齐
-			- **baseline：**项目第一行文字的基线对齐
-			- **stretch(默认值)：**如果项目**没有**设置高度或者高度为**auto**，则拉伸占满整个容器的高度
+			- flex-start：交叉轴起点对齐
+			- flex-end：交叉轴终点对齐
+			- center：交叉轴居中对齐
+			- baseline：项目第一行文字的基线对齐
+			- stretch(默认值)：如果项目**没有**设置高度或者高度为**auto**，则拉伸占满整个容器的高度
 			![](http://upload-images.jianshu.io/upload_images/5138806-ec26abbafb5f9156.gif?imageMogr2/auto-orient/strip)
-		- align-content
+		- align-content(针对flex lines)
 			- 交叉轴版的`justify-content`,需交叉轴方向上有多行项目，如果只有1行则不起作用
 			- `align-content: flex-start | flex-end | center | space-between | space-around | stretch`
-			- **flex-start:**交叉轴的起点对齐
-			- **flex-end:**交叉轴的终点对齐
-			- **center:**交叉轴的居中对齐
-			- **space-between:**交叉轴两端对齐，各行之间的距离相等
-			- **space-around:**各行之间的距离相等
-			- **stretch(默认值):**各行占满整个交叉轴
+			- flex-start:交叉轴的起点对齐
+			- flex-end:交叉轴的终点对齐
+			- center:交叉轴的居中对齐
+			- space-between:交叉轴两端对齐，各行之间的距离相等
+			- space-around:各行之间的距离相等
+			- stretch(默认值):各行占满整个交叉轴
 			![](http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071012.png)
 - flex项目(flex item, flex容器下的所有子元素)
 	- order
@@ -82,3 +82,5 @@
 - [flex实现响应式导航栏](https://codepen.io/hope0821/pen/brmPpv?editors=1100#0)
 
 - [flex实现响应式圣杯布局](https://codepen.io/hope0821/pen/YxRXxK?editors=1100)
+
+- [flex布局](https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_website)

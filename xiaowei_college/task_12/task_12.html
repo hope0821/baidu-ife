@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>小薇学院-任务十二</title>
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        list-style: none;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    /* 第一个 */
+
+    .demo {
+        margin: 30px auto 100px auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .demo span {
+        width: 130px;
+        display: inline-block;
+    }
+
+    .demo span:first-child,
+    .demo span:last-child {
+        width: 50px;
+    }
+
+    .demo span:nth-child(2) {
+        border-left: 2px solid #fff;
+        border-right: 2px solid #fff;
+    }
+
+
+    .demo li:nth-child(odd) {
+        background-color: #ddd;
+    }
+
+    .demo li:nth-child(-n+4) {
+        color: red;
+    }
+
+    .demo li:first-child {
+        background-color: #000;
+        color: #fff;
+    }
+    /* 第二个 */
+
+    .box {
+        width: 150px;
+        height: 30px;
+        border: 1px solid #ddd;
+        transition: width 0.5s;
+        display: block;
+    }
+
+    .box:focus {
+        box-shadow: 0 0 8px rgba(35, 173, 255, 1);
+        width: 300px;
+    }
+    /* 第三个 */
+
+    .wrap {
+        position: relative;
+        width: 200px;
+        height: 100px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .item {
+        position: absolute;
+        width: 200px;
+        height: 100px;
+        top: 0;
+        left: 0;
+    }
+
+    #i-1 {
+        background-color: red;
+    }
+
+    #i-2 {
+        background-color: yellow;
+    }
+
+    #i-3 {
+        background-color: blue;
+    }
+
+    .wrap ol {
+        position: absolute;
+        right: 6px;
+        bottom: 10px;
+        z-index: 3;
+    }
+
+    .wrap ol li {
+        display: inline-block;
+    }
+
+    .wrap a {
+        color: #fff;
+        padding: 5px 10px;
+        text-decoration: none;
+        background-color: #ccc;
+        opacity: 0.5;
+    }
+
+    @keyframes moveIn {
+        from {
+            left: -100%;
+        }
+        to {
+            left: 0;
+        }
+    }
+
+    li.item:target {
+        z-index: 2;
+        animation: moveIn 0.5s linear;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="demo">
+        <ul>
+            <li><span>排名</span><span>网站</span><span>热度</span></li>
+            <li><span>1.</span><span>百度前端技术学院</span><span>13000</span></li>
+            <li><span>2.</span><span>百度前端技术学院</span><span>12000</span></li>
+            <li><span>3.</span><span>百度前端技术学院</span><span>11000</span></li>
+            <li><span>4.</span><span>百度前端技术学院</span><span>10000</span></li>
+            <li><span>5.</span><span>百度前端技术学院</span><span>9000</span></li>
+            <li><span>6.</span><span>百度前端技术学院</span><span>8000</span></li>
+            <li><span>7.</span><span>百度前端技术学院</span><span>7000</span></li>
+            <li><span>8.</span><span>百度前端技术学院</span><span>6000</span></li>
+            <li><span>9.</span><span>百度前端技术学院</span><span>5000</span></li>
+            <li><span>10.</span><span>百度前端技术学院</span><span>4000</span></li>
+        </ul>
+    </div>
+    <div class="demo">
+        <input type="text" name="" class="box">
+    </div>
+    <div class="wrap">
+        <ul>
+            <li class="item" id="i-1"></li>
+            <li class="item" id="i-2"></li>
+            <li class="item" id="i-3"></li>
+        </ul>
+        <ol>
+            <li><a href="#i-1">1</a></li>
+            <li><a href="#i-2">2</a></li>
+            <li><a href="#i-3">3</a></li>
+        </ol>
+    </div>
+</body>
+
+</html>

@@ -107,3 +107,12 @@ header {
   overflow: hidden;
 }
 ```
+
+### Q6: 单行段落末尾显示省略号的css实现
+```css
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+```
